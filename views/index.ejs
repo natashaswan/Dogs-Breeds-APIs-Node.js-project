@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>hey</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
+  </head>
+  <body>
+    <h1>Learn what a dog breed look like with us!</h1>
+    <h4>
+      Find a dog breed in the list below, enter the name in the search bar ad
+      hit search. We will show you how what it looks like in no time
+    </h4>
+
+    <ul>
+      <% Object.keys(list).forEach(function (key) { %>
+      <li><%= key %></li>
+      <% }) %>
+    </ul>
+
+    <form action="/" method="POST">
+      <input type="text" name="message" />
+      <button type="submit">Search dog breed</button>
+    </form>
+
+    <script src="" async defer></script>
+  </body>
+</html>
