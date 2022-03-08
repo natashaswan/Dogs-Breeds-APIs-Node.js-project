@@ -1,5 +1,4 @@
 const https = require ("https");
-const requestHandler = require ("./routes");
 const express = require('express');
 const res = require("express/lib/response");
 const app = express();
@@ -42,7 +41,7 @@ app.get('/', function(req, res) {
            
             const dogImg = JSON.parse(data).message;
         
-            res.render("image", {img: dogImg})
+            res.render("image", {img: dogImg, title: searchBreed})
         });
     
         }).on("error", (err) => {
