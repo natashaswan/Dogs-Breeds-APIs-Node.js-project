@@ -31,7 +31,7 @@ p {
     margin: 0px;
 
     &-logo {
-      width: 15%;
+      width: 10%;
       margin: 15px;
       float: left;
     }
@@ -128,6 +128,9 @@ p {
     a {
       color: $primary-color;
     }
+  }
+  .navbar-logo {
+    width: 15%;
   }
   .container-horizontal {
     display: flex;
