@@ -13,8 +13,10 @@
     />
   </head>
   <body>
+    <%- include('partials/navigation.ejs') %>.
     <h2 class="img-title"><%= title %></h2>
     <br />
+    <p>Refresh page for more images</p>
     <div class="img-container">
       <img src="<%= img %>" width="50%" alt="dog image" />
     </div>
