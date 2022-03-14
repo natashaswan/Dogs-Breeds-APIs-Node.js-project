@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Dog breeds APIs</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="/styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <h1 class="list-title">List of Dog Breeds</h1>
+  <div class="container-list">
+    <ul>
+      <div class="container-list-one">
+        <h3>A - C</h3>
+        <% Object.keys(list).forEach(function (key) { %> <% let newKey =
+        key.split(""); %> <% if (key[0]==="a" || key[0]==="b" || key[0]==="c") {
+        %>
+        <li><%= key %></li>
+        <% } %> <% }) %>
+
+        <h3>D - F</h3>
+        <% Object.keys(list).forEach(function (key) { %> <% let newKey =
+        key.split(""); %> <% if (key[0]==="d" || key[0]==="e" || key[0]==="f") {
+        %>
+        <li><%= key %></li>
+        <% } %> <% }) %>
+
+        <h3>G - K</h3>
+        <% Object.keys(list).forEach(function (key) { %> <% let newKey =
+        key.split(""); %> <% if (key[0]==="g" || key[0]==="h" || key[0]==="i" ||
+        key[0]==="j" || key[0]==="k") { %>
+        <li><%= key %></li>
+        <% } %> <% }) %>
+      </div>
+      <div class="container-list-two">
+        <h3>L - P</h3>
+        <% Object.keys(list).forEach(function (key) { %> <% let newKey =
+        key.split(""); %> <% if (key[0]==="l" || key[0]==="m" || key[0]==="n" ||
+        key[0]==="o" || key[0]==="p") { %>
+        <li><%= key %></li>
+        <% } %> <% }) %>
+
+        <h3>Q - S</h3>
+        <% Object.keys(list).forEach(function (key) { %> <% let newKey =
+        key.split(""); %> <% if (key[0]==="q" || key[0]==="r" || key[0]==="s") {
+        %>
+        <li><%= key %></li>
+        <% } %> <% }) %>
+
+        <h3>T - Z</h3>
+        <% Object.keys(list).forEach(function (key) { %> <% let newKey =
+        key.split(""); %> <% if (key[0]==="t" || key[0]==="u" || key[0]==="v" ||
+        key[0]==="w" || key[0]==="x" || key[0]==="y" || key[0]==="z") { %>
+        <li><%= key %></li>
+        <% } %> <% }) %>
+    </ul>
+    </div>
+     
+  </div>
+  <p> 	&#169; Thank you https://dog.ceo/dog-api/ for your amazing and free API. All credit for the info and images go to them.</p>
+  
+  </body>
+  
+</html>

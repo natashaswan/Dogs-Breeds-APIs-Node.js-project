@@ -6,26 +6,111 @@
     <title>Dog breeds APIs</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" type="text/css" href="/styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
+
   <body>
-    <h1>Learn dog breeds with us!</h1>
-    <h4>
-      Find a dog breed in the list below, enter the name in the search bar and
-      hit search. We will show you what the breed looks like.
-    </h4>
+    <div class="nav-container">
+      <div class="navbar">
+        <nav>
+          <img class="navbar-logo" src="/images/dog-logo.png" alt="logo" />
+          <ul class="main-header__item-list" id="menu-items">
+            <li class="main-header__item">
+              <a href="/list"> List Recognized Breeds</a>
+            </li>  
+            <li>
+              <a href="/smile"> Make me smile </a>
+            </li>             
+          </ul>
+        </nav>
+      </div>
+    </div>
 
-    <ul>
-      <% Object.keys(list).forEach(function (key) { %>
-      <li><%= key %></li>
-      <% }) %>
-    </ul>
+    <div class="header">
+      <h1 class="h1">Dog Breed Identification</h1>
+      <p>
+        Press on the button with a dog breed below to open its image.
+      </p>
+    </div>
 
-    <form action="/" method="POST">
-      <input type="text" name="message" />
-      <button type="submit">Search dog breed</button>
-    </form>
+    <!-- photo credit charlesdeluvio     @charlesdeluvio unsplash.com-->
+    <div class="container-horizontal">
+      <div class="container-item">
+      </div>
 
-    <script src="" async defer></script>
-  </body>
+      <div class="container-item">
+        <h3>A - C</h3>
+        <form action="/image" method="POST">
+          <% Object.keys(list).forEach(function (key) { %>
+            <% let newKey = key.split(""); %>
+            <% if (key[0]==="a" || key[0]==="b" || key[0]==="c") { %>            
+          <input class="button-17" type="submit" name="dogButton" value="<%= key %>">
+          </input>
+          <% } %>         
+          <% }) %>
+        </form>
+
+        <h3>D - F</h3>
+        <form action="/image" method="POST">
+          <% Object.keys(list).forEach(function (key) { %>
+            <% let newKey = key.split(""); %>
+            <% if (key[0]==="d" || key[0]==="e" || key[0]==="f") { %>            
+          <input class="button-17" type="submit" name="dogButton" value="<%= key %>">
+          </input>
+          <% } %>         
+          <% }) %>
+        </form>
+
+        <h3>G - K </h3>
+        <form action="/image" method="POST">
+          <% Object.keys(list).forEach(function (key) { %>
+            <% let newKey = key.split(""); %>
+            <% if (key[0]==="g" || key[0]==="h" || key[0]==="i" || key[0]==="j" || key[0]==="k") { %>            
+          <input class="button-17" type="submit" name="dogButton" value="<%= key %>">
+          </input>
+          <% } %>         
+          <% }) %>
+        </form>
+
+        <h3>L - P</h3>
+        <form action="/image" method="POST">
+          <% Object.keys(list).forEach(function (key) { %>
+            <% let newKey = key.split(""); %>
+            <% if (key[0]==="l" || key[0]==="m" || key[0]==="n" || key[0]==="o" || key[0]==="p") { %>            
+          <input class="button-17" type="submit" name="dogButton" value="<%= key %>">
+          </input>
+          <% } %>         
+          <% }) %>
+        </form>
+
+        <h3>Q - S </h3>
+        <form action="/image" method="POST">
+          <% Object.keys(list).forEach(function (key) { %>
+            <% let newKey = key.split(""); %>
+            <% if (key[0]==="q" || key[0]==="r" || key[0]==="s") { %>            
+          <input class="button-17" type="submit" name="dogButton" value="<%= key %>">
+          </input>
+          <% } %>         
+          <% }) %>
+        </form>
+
+        <h3>T - Z </h3>
+        <form action="/image" method="POST">
+          <% Object.keys(list).forEach(function (key) { %>
+            <% let newKey = key.split(""); %>
+            <% if (key[0]==="t" || key[0]==="u" || key[0]==="v" || key[0]==="w" || key[0]==="x" || key[0]==="y" || key[0]==="z") { %>            
+          <input class="button-17" type="submit" name="dogButton" value="<%= key %>">
+          </input>
+          <% } %>         
+          <% }) %>
+        </form>
+        
+      </div>
+    </div>
+    
+  <p>	&#169; Thank you https://dog.ceo/dog-api/ for your amazing and free API. All credit for the info and images go to them.</p></body>
 </html>

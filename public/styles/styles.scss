@@ -1,0 +1,139 @@
+@import "_smile";
+@import "_list";
+@import "_image";
+
+$font-stack: Helvetica, sans-serif;
+$primary-color: #555;
+$background-color: #f6f6f6;
+
+body {
+  font: 100% $font-stack;
+  background-color: $background-color;
+}
+h3 {
+  text-align: center;
+}
+p {
+  color: $primary-color;
+  text-align: center;
+}
+
+// navigation
+.nav-container {
+  max-width: 1300px;
+  background-color: $background-color;
+  a {
+    text-decoration: none;
+    color: $primary-color;
+  }
+  .navbar {
+    align-items: center;
+    margin: 0px;
+
+    &-logo {
+      width: 15%;
+      margin: 15px;
+      float: left;
+    }
+    nav {
+      flex: 1;
+      text-align: right;
+
+      ul {
+        display: inline-block;
+        list-style-type: none;
+        font-size: large;
+        padding: 0 2% 0 2%;
+
+        li {
+          display: inline-block;
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+}
+
+//heading
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 5%;
+  text-align: center;
+}
+
+//button-list
+.container-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+//button
+//credit to https://getcssscan.com/css-buttons-examples
+.button-17 {
+  align-items: center;
+  appearance: none;
+  background-color: #fff;
+  border-radius: 10px;
+  border-style: none;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px -1px,
+    rgba(0, 0, 0, 0.14) 0 6px 10px 0, rgba(0, 0, 0, 0.12) 0 1px 18px 0;
+  box-sizing: border-box;
+  color: #3c4043;
+  cursor: pointer;
+  display: inline-flex;
+  fill: currentcolor;
+  font-family: "Google Sans", Roboto, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 48px;
+  justify-content: center;
+  letter-spacing: 0.25px;
+  line-height: normal;
+  max-width: 100%;
+  overflow: visible;
+  padding: 2px 24px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 15ms linear 30ms, transform 270ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
+  will-change: transform, opacity;
+  z-index: 0;
+  margin: 10px;
+
+  &:hover {
+    background: #f6f9fe;
+    color: #174ea6;
+  }
+
+  &:focus {
+    outline: none;
+    border: 2px solid #4285f4;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  nav ul li {
+    display: block;
+    margin-right: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    a {
+      color: $primary-color;
+    }
+  }
+  .container-horizontal {
+    display: flex;
+    flex-direction: column;
+  }
+  .container-item-header {
+    margin-top: 150px;
+  }
+}
