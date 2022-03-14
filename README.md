@@ -1,5 +1,5 @@
 # Dogs-Breeds-APIs-Node.js-project
-> Individual Project 
+> In this project I "play" with an API, trying SASS for thw first time and continue developing my Node.js skills.
 ### Status: complete.
 ___
 ## Table of Contents
