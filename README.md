@@ -1,5 +1,5 @@
 # Dogs-Breeds-APIs-Node.js-project
-> In this project I "play" with an API, trying SASS for the first time and continue developing my Node.js skills.
+> In this project I "play" with an API, using SASS for the first time and continue developing my Node.js skills. I also used a webpack for this project, though it is a bit too small to see its impact.
 ### Status: complete.
 ___
 ## Table of Contents
